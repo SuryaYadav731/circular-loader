@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    height: 200px;
+    width: 200px;
+    
+
+}
+
+.circular{
+    animation: circular-show 1.6s infinite;
+
+}
+
+@keyframes circular-show {
+    0%{
+        stroke-dasharray: 10 510;
+        stroke-dashoffset: 0;
+    }
+
+    50%{
+        stroke-dashoffset: -250;
+        stroke-dasharray: 170 510;
+
+    }
+    
+    100%{
+        stroke-dasharray: 170 510;
+        stroke-dashoffset: -510;
+    }
+}
